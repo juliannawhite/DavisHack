@@ -37,7 +37,7 @@ var map = L.mapbox.map('map', 'mapbox.streets')
     }))
 
 map.doubleClickZoom.disable();
-map.unbind('dblclick');
+
 map.on('dblclick', function(e) {
     
 	
