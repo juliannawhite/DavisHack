@@ -31,7 +31,11 @@
 //});
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGVndXptYW5rZXZpbiIsImEiOiJjamNvZW82ODIwMXN3MnFvY2szNGYzeXo4In0.h4M6PL-1pMS6ahRKYHLn9w';
 var map = L.mapbox.map('map', 'mapbox.streets')
-    .setView([39, -98], 4);
+    .setView([39, -98], 4)
+    .addControl(L.mapbox.geocoderControl('mapbox.places', {
+        keepOpen: true
+    }));
+
   L.mapbox.featureLayer({
     // this feature is in the GeoJSON format: see geojson.org
     // for the full specification
