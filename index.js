@@ -39,8 +39,6 @@ var map = L.mapbox.map('map', 'mapbox.streets')
 map.doubleClickZoom.disable();
 
 map.on('dblclick', function(e) {
-    
-	
     var randomHex = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     L.mapbox.featureLayer({
     // this feature is in the GeoJSON format: see geojson.org
@@ -56,8 +54,8 @@ map.on('dblclick', function(e) {
         ]
     },
     properties: {
-        title: 'new',
-        description: 'new',
+        title: 'New Person',
+        description: 'I need help!',
         // one can customize markers by adding simplestyle properties
         // https://www.mapbox.com/guides/an-open-platform/#simplestyle
         'marker-size': 'large',
