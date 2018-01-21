@@ -1,16 +1,14 @@
 .small-header  {
     font-size: 20px;
     background-color: #001f3f;
-    font-family: Abril+Fatface;
+    font-family: Raleway;
     color:whitesmoke;
     text-align: right;
-
-  
 }
 
 .header-font {
   font-size: 110px;
-  font-family: Abril+Fatface;
+  font-family: Raleway;
   color: whitesmoke;
  background-color: #001f3f;
     
@@ -18,7 +16,7 @@
 
 .sub-header {
     font-size: 60px;
-    font-family: Abril+Fatface;
+    font-family: Raleway;
     color: #001f3f;
 }
 
@@ -44,4 +42,20 @@
     margin-right: 200px;
     
 }
+#blurb {
+  margin-top: 37.5%;
+}
+#map { 
+  position:absolute; 
+  top:0; 
+  bottom:0; 
+  width:100%; 
+  margin-top: 20%; 
+  height: 70%;
+  width: 70%;
+   margin-left: 200px;
+    margin-right: 200px;
 
+}
+
+body { margin:0; padding:0; }

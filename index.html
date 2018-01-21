@@ -1,42 +1,57 @@
+<!DOCTYPE html>
+<!--Verbose-->
+<head>
+<meta charset=utf-8 />
+<title>Help Pin</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+
+</head>
+  
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" type="text/css" href="index.css">
+
+  
 
 <div class = "small-header">
 <p style = "margin-right: 30px;">
     <a class = "section"> Login </a> </p>
 </div>
 
-<p class="header-font" style="text-align:center">  
-  Pin Drop </p>
+<div class="header-font" style="text-align:center">  
+  HelPin </div>
 
-<p class = "sub-header" style = "text-align: center" >
-
-</p>
 
 <br/>
 <br/>
 
-<image class = "map" src = "https://picnicday.ucdavis.edu/wp-content/uploads/2015/02/2015_tolietlocation_map-e1428339565634.png" alt = temp_google_map_davis> </image>
+
+<div id='map'></div>
+
 
 <br/>
 <br/>
 
+
+
+
+<div id="blurb">
 <h1 style = "background-color: #001f3f; color: whitesmoke;">
 <p style = "margin-left: 40px"> mission </p>
 </h1>
-
+  <br/>
 <br/>
-<br/>
-
 <p class = blurb >
 
-Welcome to Pin Drop, an app dedicated to connecting people in need with people who are in a position to help. Through this web app, people are able to drop location pins throughout their area that dictate where a person in need is and how any individual can help..Welcome to Pin Drop, an app dedicated to connecting people in need with people who are in a position to help. Through this web app, people are able to drop location pins throughout their area that dictate where a person in need is and how any individual can help..Welcome to Pin Drop, an app dedicated to connecting people in need with people who are in a position to help. Through this web app, people are able to drop location pins throughout their area that dictate where a person in need is and how any individual can 
+Welcome to Pin Drop, an app dedicated to connecting people in need with people who are in a position to help. Through this web app, people are able to drop location pins throughout their area that dictate where a person in need is and how any individual can help..Welcome to Pin Drop, an app dedicated to connecting people in need with people who are in a position to help. Through this web app, people are able to drop location pins throughout their area that dictate where a person in need is and how any individual can help..Welcome to Pin Drop, an app dedicated to connecting people in need with people who are in a position to help. Through this web app, people are able to drop location pins throughout their area that dictate where a person in need is and how any individual can hello hello
 
 </p>
-
+</div>
 
 <br/>
 <br/>
@@ -48,5 +63,11 @@ Welcome to Pin Drop, an app dedicated to connecting people in need with people w
 
 <br/>
 <br/>
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZGVndXptYW5rZXZpbiIsImEiOiJjamNvZW82ODIwMXN3MnFvY2szNGYzeXo4In0.h4M6PL-1pMS6ahRKYHLn9w';
+var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([40, -74.50], 9);
+</script>
 
 
