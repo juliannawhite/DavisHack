@@ -1,0 +1,47 @@
+.small-header  {
+    font-size: 20px;
+    background-color: #001f3f;
+    font-family: Abril+Fatface;
+    color:whitesmoke;
+    text-align: right;
+
+  
+}
+
+.header-font {
+  font-size: 110px;
+  font-family: Abril+Fatface;
+  color: whitesmoke;
+ background-color: #001f3f;
+    
+}
+
+.sub-header {
+    font-size: 60px;
+    font-family: Abril+Fatface;
+    color: #001f3f;
+}
+
+.map {
+    border: solid #001f3f 1px; 
+    padding: 2px;
+    width: 900px;
+    margin-left: 150px;
+
+}
+
+.section {
+  font-size: 20px;
+  color: whitesmoke;
+    
+}
+
+.blurb {
+    font-size: 20px;
+    color: #001f3f;
+    color: #001f3f;
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+
