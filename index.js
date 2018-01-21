@@ -1,4 +1,3 @@
-
 //
 //map.on('click', (e) => {
 //  alert('clicked!');
@@ -29,45 +28,13 @@
 //  .setLngLat(marker.geometry.coordinates)
 //  .addTo(map);
 //});
+
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGVndXptYW5rZXZpbiIsImEiOiJjamNvZW82ODIwMXN3MnFvY2szNGYzeXo4In0.h4M6PL-1pMS6ahRKYHLn9w';
 var map = L.mapbox.map('map', 'mapbox.streets')
     .setView([39, -98], 4)
     .addControl(L.mapbox.geocoderControl('mapbox.places', {
         keepOpen: true
-    }))
-
-map.doubleClickZoom.disable();
-
-map.on('dblclick', function(e) {
-    
-	
-    var randomHex = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-    L.mapbox.featureLayer({
-    // this feature is in the GeoJSON format: see geojson.org
-    // for the full specification
-    type: 'Feature',
-    geometry: {
-        type: 'Point',
-        // coordinates here are in longitude, latitude order because
-        // x, y is the standard for GeoJSON and many formats
-        coordinates: [
-          e.latlng.lng,
-          e.latlng.lat
-        ]
-    },
-    properties: {
-        title: 'new',
-        description: 'new',
-        // one can customize markers by adding simplestyle properties
-        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
-        'marker-size': 'large',
-        'marker-color': randomHex,
-        'marker-symbol': 'heart'
-    }
-}).addTo(map);
-});
-
-    
+    }));
 
   L.mapbox.featureLayer({
     // this feature is in the GeoJSON format: see geojson.org
@@ -251,5 +218,77 @@ L.mapbox.featureLayer({
         'marker-size': 'medium',
         'marker-color': '#000000',
         'marker-symbol': 'pharmacy'
+    }
+}).addTo(map);
+
+L.mapbox.featureLayer({
+    // this feature is in the GeoJSON format: see geojson.org
+    // for the full specification
+    type: 'Feature',
+    geometry: {
+        type: 'Point',
+        // coordinates here are in longitude, latitude order because
+        // x, y is the standard for GeoJSON and many formats
+        coordinates: [
+          -85.74052,
+          38.54491 
+        ]
+    },
+    properties: {
+        title: 'Jason',
+        description: 'I need a bus ticket',
+        // one can customize markers by adding simplestyle properties
+        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+        'marker-size': 'small',
+        'marker-color': '#0000FF',
+        'marker-symbol': 'bus'
+    }
+}).addTo(map);
+
+L.mapbox.featureLayer({
+    // this feature is in the GeoJSON format: see geojson.org
+    // for the full specification
+    type: 'Feature',
+    geometry: {
+        type: 'Point',
+        // coordinates here are in longitude, latitude order because
+        // x, y is the standard for GeoJSON and many formats
+        coordinates: [
+          -85.74052,
+          38.54491 
+        ]
+    },
+    properties: {
+        title: 'Augustus Bloom',
+        description: 'I need food for my dog :(‘',
+        // one can customize markers by adding simplestyle properties
+        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+        'marker-size': 'small',
+        'marker-color': '#000000',
+        'marker-symbol': 'dog-park'
+    }
+}).addTo(map);
+http://map.michelstuyts.be/icons/
+L.mapbox.featureLayer({
+    // this feature is in the GeoJSON format: see geojson.org
+    // for the full specification
+    type: 'Feature',
+    geometry: {
+        type: 'Point',
+        // coordinates here are in longitude, latitude order because
+        // x, y is the standard for GeoJSON and many formats
+        coordinates: [
+          -85.74052,
+          38.54491 
+        ]
+    },
+    properties: {
+        title: 'Jason',
+        description: 'I just need someone to talk to',
+        // one can customize markers by adding simplestyle properties
+        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+        'marker-size': 'large',
+        'marker-color': '#ffc0cb',
+        'marker-symbol': 'heart'
     }
 }).addTo(map);
