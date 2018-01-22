@@ -65,7 +65,6 @@ map.on('dblclick', function(e) {
     }
 }).addTo(map);
 });
-    }));
 
 
   L.mapbox.featureLayer({
